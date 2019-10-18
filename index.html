@@ -229,6 +229,245 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/18/电脑打印机图标右键没有扫描选项怎么办？/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Way-Kwok Chu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Way-Kwok Chu's WebBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/18/电脑打印机图标右键没有扫描选项怎么办？/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-18T16:50:40+08:00">
+                2019-10-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>方法/步骤：<br>1、先win+R键打开cmd运行输入services.msc，打开服务<br><img src="https://upload-images.jianshu.io/upload_images/10150829-934281f59683fca2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="QQ截图20180929151357.png"><br>2、然后找到Windows Image Acquisition (WIA)服务（为扫描仪和照相机提供图像采集服务），如果各位看这个服务是“已启动”那就不用往下看了，再去找找其他的解决办法吧。<br><img src="https://upload-images.jianshu.io/upload_images/10150829-7f7fe5926b58207c.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="捕获.PNG"><br>3、选中服务点右键，点启动。如果启动成功就去设备和打印机，右键打印机图标扫描选项应该已经出来了，如果启动不成功，<br>“无法启动windows image Acquisition (WIA)服务 错误 1068:依存服务或组无法启”，<br>继续往下看<br><img src="https://upload-images.jianshu.io/upload_images/10150829-3ff0f8e6d9abdc42.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="捕获.PNG"><br>4、Windows Image Acquisition有 (WIA)2个依赖服务项，Shell Hardware Detection和Remote Procedure Call (RPC)。<br>检查Remote Procedure Call (RPC)和Shell Hardware Detectio的运行状态， 并把这两项的启动类型改为手动，然后右键点击开启。然后再尝试启动Windows Image Acquisition (WIA)服务。<br>右击Windows Image Acquisition (WIA)服务打开其属性，切换到“依存关系”，把所有该服务依赖的系统组件全部启用;<br><img src="https://upload-images.jianshu.io/upload_images/10150829-d7a99fe3af680032.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="QQ截图20180929164803.png"><br>5、这个服务启动之后就有了扫描选项了<br><img src="https://upload-images.jianshu.io/upload_images/10150829-a1d854fecfb1c238.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="QQ截图20180929164847.png"><br>6、第一次扫描的时候改一下 扫描配置文件，不然有可能会像下面图片那样<br><img src="https://upload-images.jianshu.io/upload_images/10150829-93d50bf736921607.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="QQ截图20180929164941.png"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/18/test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Way-Kwok Chu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Way-Kwok Chu's WebBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/10/18/test/" itemprop="url">test</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-18T16:39:43+08:00">
+                2019-10-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/15/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -394,7 +633,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
